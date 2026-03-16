@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "total_samples": 10,
+    "error_samples": 4,
+    "error_rate": 0.4,
+    "total_errors": 4
+  },
+  "error_type_distribution": {
+    "hallucination": 4
+  },
+  "entity_type_error_distribution": {
+    "地址": 1,
+    "地点": 1,
+    "人名": 1,
+    "日期": 1
+  },
+  "top_error_samples": [
+    {
+      "line": 4,
+      "errors": [
+        {
+          "type": "hallucination",
+          "entity_type": "地址",
+          "value": "北京市海淀区",
+          "message": "幻觉标注：要素 '地址' 的值 '北京市海淀区' 在原文中不存在 (置信度：0.00)"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "errors": [
+        {
+          "type": "hallucination",
+          "entity_type": "地点",
+          "value": "北京",
+          "message": "幻觉标注：要素 '地点' 的值 '北京' 在原文中不存在 (置信度：0.00)"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "errors": [
+        {
+          "type": "hallucination",
+          "entity_type": "人名",
+          "value": "赵六",
+          "message": "幻觉标注：要素 '人名' 的值 '赵六' 在原文中不存在 (置信度：0.00)"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "errors": [
+        {
+          "type": "hallucination",
+          "entity_type": "日期",
+          "value": "2024 年 3 月 31 日",
+          "message": "幻觉标注：要素 '日期' 的值 '2024 年 3 月 31 日' 在原文中不存在 (置信度：0.00)"
+        }
+      ]
+    }
+  ],
+  "suggestions": [
+    "🚨 幻觉标注占比 100.0% - 建议：\n   - 在标注指南中强调'原文必须有依据'原则\n   - 对标注者进行反幻觉培训\n   - 考虑添加自动验证步骤",
+    "⚠️ 要素 '地址' 错误最多 (1 次) - 建议：\n   - 检查该要素的定义是否清晰\n   - 提供更多标注示例\n   - 考虑是否需要拆分或合并该要素类型",
+    "🔴 标注错误率 40.0% 较高 - 建议：\n   - 重新审核标注指南\n   - 对标注者进行再培训\n   - 考虑引入多人标注 + 仲裁机制"
+  ]
+}

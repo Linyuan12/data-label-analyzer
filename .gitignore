@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Excel 临时文件
+~$*.xlsx
+~$*.xls
+*.tmp
+
+# 测试数据（可选，如果包含敏感信息）
+# test_data.xlsx
+# test_result.xlsx
+# 数据重审.xlsx
+# 数据重审_分析结果.xlsx
+
+# 大型数据文件
+*.csv
+!sample_data.csv
